@@ -10,9 +10,7 @@ const contactRouter = require('./src/contact/contactRouter');
 
 
 app.use(express.json())
-app.use(cors({
-    origin: "https://sudip.vercel.app/"
-}))
+app.use(cors())
 
 app.use('/users', userRouter)
 app.use('/testimonials', testimonialRouter)
