@@ -6,7 +6,6 @@ const fs = require('node:fs')
 const testimonialModel = require('./testimonialModel')
 
 const createTestimonial = async (req, res, next) => {
-    console.log(req.files)
     const { name, designation, desc } = req.body
 
     try {
